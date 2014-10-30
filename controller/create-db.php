@@ -32,7 +32,7 @@
              	."id int(11) Not NULL AUTO_INCEMENT,"
              	."title varchart(255) NOT NULL",
              	."post text NOT NULL,"
-             	."PRIMARY KEY (id))"); 
+             	."PRIMARY KEY (id)"); 
 
         
 
