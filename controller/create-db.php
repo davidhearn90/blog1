@@ -26,6 +26,14 @@
 
             	echo "Database already exists.";
             }
+
+            //creates table in blog database
+             $query = $connection->query("CREATE TABLE posts ("
+             	."id int(11) Not NULL AUTO_INCEMENT,"
+             	."title varchart(255) NOT NULL",
+             	."post text NOT NULL,"
+             	."PRIMARY KEY (id))"); 
+
         
 
         	
