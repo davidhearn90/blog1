@@ -13,7 +13,7 @@
         if(!$exists) {
             $query = $connection->query("CREATE DATABASE $database"); 
 
-            //$querry is like a question 
+            //$query is like a question 
             if($query){
 
             	echo "<p>successfully created database: " . $database . "</p>";
