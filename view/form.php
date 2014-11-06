@@ -14,4 +14,8 @@
         <!--text area can cover multiple lines and and can be expanded  -->
         <textarea name="post"></textarea>
     </div>
+    
+    <div>
+        <button type="submit">Submit</button>
+    </div>
 </form>
