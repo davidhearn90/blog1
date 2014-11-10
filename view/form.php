@@ -1,7 +1,13 @@
+<?php
+require_once(__DIR__ . "/../model/config.php");
+
+
+?>
+
 <h1>Create Blog Post</h1>
 
-
-<form>
+<!-- sends information to create post -->
+<form method="post" action="<?php echo $path ."controller/create-post.php" ?>">
     <div>
         <label for="title">Title: </label>
         <!--input only works on one line-->
