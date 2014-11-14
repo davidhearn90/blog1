@@ -1,6 +1,6 @@
 <?php
 //
-	require_once(__DIR__ . "/../model/database.php");//requires a file requires a file onec
+	require_once(__DIR__ . "/../model/config.php");//requires a file requires a file onec
 //__dir__ checks the directory for model
 	$connection = new mysqli($host, $username, $password);//connects the databae variables
         //runs if there is a connection error

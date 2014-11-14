@@ -3,17 +3,17 @@ body{
     
 };
 
-  @media  and (max-device-width : 768px){
+  @media  and (max-device-width : 1024px){
     body{
         background-color: red;
-    }
+    };
 
   }
 
-   @media and (min-device-width : 1024px){
+   @media and (min-device-width : 768px){
     body{
         background-color: green;
-    }
+    };
 
    } 
            
