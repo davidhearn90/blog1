@@ -15,5 +15,17 @@ public function __construct($host, $username, $password, $database){
 	$this->host = $database;
 
 }
+//opens connection
+public function openConnection(){
+
+}
+//closes connection
+public function closeConnection(){
+
+}
+
+public function query($string){
+
+}
 	
 }
