@@ -3,11 +3,18 @@ body{
     
 };
 
-   @media (min-device-width : 768px) and (max-device-width : 1024px) {
-   body{
+   @media (min-device-width : 320px) and (max-device-width : 480px) {
+   html,body{
         background-color: green;
-    };
+    }
 
-   }; 
+   };
+
+   @media (min-device-width : 768px) and (max-device-width : 1024px) {
+   html,body{
+        background-color: orange;
+    }
+
+   };  
            
       

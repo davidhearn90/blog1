@@ -17,10 +17,21 @@ public function __construct($host, $username, $password, $database){
 }
 //opens connection
 public function openConnection(){
+	$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+	 //runs if there is a connection error
+	 if($this->connection->connect_error) {
+            
+            die("<p>Error: " .$this->connection->connect_error."</p>");
+        }
 
 }
 //closes connection
 public function closeConnection(){
+	//checks weatther you open the connection or not
+	//isset checks if t
+	if(isset()){
+
+	};
 
 }
 
