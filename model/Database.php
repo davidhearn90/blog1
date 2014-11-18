@@ -28,9 +28,9 @@ public function openConnection(){
 //closes connection
 public function closeConnection(){
 	//checks weatther you open the connection or not
-	//isset checks if t
-	if(isset()){
-
+	//isset checks if the variable is set
+	if(isset($this->connection)){
+		$this->connection->close();
 	};
 
 }
