@@ -36,6 +36,13 @@ public function closeConnection(){
 }
 
 public function query($string){
+	$this->openConnection();
+	//queries the database
+	$query = $this->connection->query($string);
+
+	$this->closeConnection();
+	//returns the results of the query
+	return $query;
 
 }
 	
