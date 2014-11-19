@@ -1,7 +1,6 @@
 <?php
 require_once(__DIR__ . "/../model/config.php");
 //creates a query that connects to the database
-$connection = new mysqli($host, $username, $password, $database);
 
 //sanitizes $title and $post
 $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
@@ -19,7 +18,7 @@ else{
 	echo "<p> $connection->error </p>";
 
 }
-  $connection->close();
+  
 
 
 
