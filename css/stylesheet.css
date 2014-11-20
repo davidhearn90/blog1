@@ -26,14 +26,14 @@ body{
   
    @media (min-width: 320px) and (max-width: 480px) {
    html,body{
-        background-color: red;
+        background-image: url('http://fc04.deviantart.net/fs70/f/2014/185/5/9/tokyo_ghoul_bw_by_kokuimato-d7p9tnz.png');
     }
 
    } 
 
    @media (min-width: 768px) and (max-width: 1024px) {
    html,body{
-      background-image: url('http://i298.photobucket.com/albums/mm252/SomethingCool_EB/narutogamakichi.jpg');
+      background-image: url('http://th09.deviantart.net/fs71/PRE/f/2014/208/1/7/tokyo_ghoul_wallpaper_by_bobyramadhan-d7sgur1.png');
     }
 
    } 

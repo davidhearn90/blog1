@@ -14,6 +14,31 @@ public function __construct($host, $username, $password, $database){
 	$this->host = $password;
 	$this->host = $database;
 
+	$this->connection = new mysqli($host, $username, $password);//connects the databae variables
+        //runs if there is a connection error
+        if($this->connection->connect_error) {
+            
+            die("<p>Error: " .$connection->connect_error."</p>");
+        }
+        $exists = $this->connection->select_db($database);
+        	//!exists runs if database does not exist
+        if(!$exists) {
+            $query = $this->connection->query("CREATE DATABASE $database"); 
+
+            //$query is like a question 
+            if($query){
+
+            	echo "<p>successfully created database: " . $database . "</p>";
+
+            }
+            
+        }
+        //only runs if you already have an existing database
+        else{
+
+            	echo "<p>Database already exists.</p>";
+            }
+
 }
 //opens connection
 public function openConnection(){
