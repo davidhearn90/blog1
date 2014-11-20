@@ -7,12 +7,13 @@ private $host;
 private $username;
 private $password;
 private $database;
+public $error;
 //assigns information to the global variables
 public function __construct($host, $username, $password, $database){
 	$this->host = $host;
-	$this->host = $username;
-	$this->host = $password;
-	$this->host = $database;
+	$this->username = $username;
+	$this->password = $password;
+	$this->database = $database;
 
 	$this->connection = new mysqli($host, $username, $password);//connects the databae variables
         //runs if there is a connection error
@@ -38,6 +39,7 @@ public function __construct($host, $username, $password, $database){
 
             	echo "<p>Database already exists.</p>";
             }
+            
 
 }
 //opens connection
@@ -64,6 +66,11 @@ public function query($string){
 	$this->openConnection();
 	//queries the database
 	$query = $this->connection->query($string);
+	//runs the opposite of whatever query is
+	if(! $query){
+
+		$this->error = $this->connection->error;
+	};
 
 	$this->closeConnection();
 	//returns the results of the query
