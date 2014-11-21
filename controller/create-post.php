@@ -6,7 +6,7 @@ require_once(__DIR__ . "/../model/config.php");
 $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 $post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 //inserts the values of title and post in the table post
-$query = $connection->query("INSERT INTO posts SET title = '$title',post = '$post' ");
+$query = $_SESSION{"connection"}->query("INSERT INTO posts SET title = '$title',post = '$post' ");
 
 if($query){
 	//runs if query is true
@@ -15,7 +15,7 @@ if($query){
 
 else{
 	//runs if query is true
-	echo "<p> $connection->error </p>";
+	 echo "<P>" . $_SESSION{"connection"}->error . "</p>";
 
 }
   

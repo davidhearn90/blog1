@@ -5,7 +5,7 @@
 	
 
             //creates table in blog database
-             $query = $connection->query("CREATE TABLE posts ("
+             $query = $_SESSION{"connection"}->query("CREATE TABLE posts ("
                 ."id int(11) Not NULL AUTO_INCREMENT,"
              	."title varchar(255) NOT NULL,"
                 ."post text NOT NULL,"
@@ -16,7 +16,7 @@
                  echo "<p>Successfully created tabele: posts</P> ";
              }
              else{
-                 echo "<P>$connection->error</p>";
+                 echo "<P>" . $_SESSION{"connection"}->error . "</p>";
              }
 
         
