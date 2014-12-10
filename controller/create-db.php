@@ -9,6 +9,7 @@
                 ."id int(11) Not NULL AUTO_INCREMENT,"
              	."title varchar(255) NOT NULL,"
                 ."post text NOT NULL,"
+                ."DateTime datetime NOT NULL ,"
                 ."PRIMARY KEY (id))");
              
              if($query){

@@ -4,7 +4,7 @@ require_once(__DIR__ . "/../model/config.php");
 
 ?>
 
-<h1>Create Blog Post</h1>
+<h1>David Hearn</h1>
 
 <!-- sends information to create post -->
 <form method="post" action="<?php echo $path ."controller/create-post.php" ?>">
