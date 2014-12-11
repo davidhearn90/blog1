@@ -2,6 +2,7 @@
 require_once(__DIR__ . "/database.php");
 //stores the database object
 session_start();
+session_regenerate_id(true);
 
 $path = "/blog/";
 
