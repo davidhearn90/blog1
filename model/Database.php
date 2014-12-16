@@ -27,20 +27,9 @@ public function __construct($host, $username, $password, $database){
             $query = $this->connection->query("CREATE DATABASE $database"); 
 
             //$query is like a question 
-            if($query){
-
-            	echo "<p>successfully created database: " . $database . "</p>";
-
-            }
             
         }
         //only runs if you already have an existing database
-        else{
-
-            	echo "<p>Database already exists.</p>";
-            }
-            
-
 }
 //opens connection
 public function openConnection(){

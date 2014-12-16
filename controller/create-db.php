@@ -11,14 +11,7 @@
                 ."post text NOT NULL,"
                 ."DateTime datetime NOT NULL ,"
                 ."PRIMARY KEY (id))");
-             
-             if($query){
-                 
-                 echo "<p>Successfully created tabele: posts</P> ";
-             }
-             else{
-                 echo "<P>" . $_SESSION{"connection"}->error . "</p>";
-             }
+            
               //creates users table in blog database
               $query = $_SESSION{"connection"}->query("CREATE TABLE users("
 
@@ -35,15 +28,7 @@
                 . "PRIMARY KEY (id))");
 
               //runs if there are no errors in the table
-              if($query){
-                 
-                 echo "<p>Successfully created tabele: users</P> ";
-             }
-             else{
-                 echo "<P>" . $_SESSION{"connection"}->error . "</p>";
-             }
-
-        
+              
 
         	
 
