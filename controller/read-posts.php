@@ -13,7 +13,6 @@ if($result){
 		echo "<p>" . $row['post'] . "</h1>";
 		echo "<br />";
 		echo "</div>";
-		echo "<section>" . $row['post'] . "</section>";
-		echo "<section>" . $row['title'] . "</section>";
+		echo "Posted on:" . $date->format("M/d/Y") . " at " .$time->format("g:i");
 	}
 }

@@ -13,12 +13,15 @@ body {
   color:green;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 20px;
+  padding: 0px, 50px, 0px, 0px;
 
 }
-.title{
-  color:green;
+h2{
+  color:red;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 200px;
+  font-size: 50px;
+  padding: 0px, 1000px, 0px, 0px;
+
 
 }
 .conteudo .continue-lendo {
@@ -92,8 +95,8 @@ nav.menu ul {
   overflow:hidden;
   float:left;
   width: 650px;
-  padding:0;
-  margin:0 0 0;
+  padding:0px;
+  margin: 100px;
   list-style: none;
   color:#fff;
   background: #1abc9c;
@@ -137,6 +140,8 @@ nav.menu ul a:hover {
         color:whitesmoke;
         letter-spacing:5px;
       }
+
+
   
    @media (min-width: 320px) and (max-width: 480px) {
    html,body{

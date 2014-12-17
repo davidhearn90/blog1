@@ -1,2 +1,2 @@
-$('article').readmore();
-$('article').readmore({sectionCSS: 'display: inline-block; width: 50%;'});
+$('post').readmore();
+$('post').readmore({sectionCSS: 'display: inline-block; width: 50%;'});

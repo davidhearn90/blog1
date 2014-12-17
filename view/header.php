@@ -35,7 +35,4 @@
   </ul>
   </nav>
 
-  <div class="post">
-  	
-  </div>
    
